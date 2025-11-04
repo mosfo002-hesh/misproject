@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies | Meredith Mosford</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .hobby-section {
+            padding: 4rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hobby-container {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .hobby-text {
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .hobby-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .hobby-image-container {
+            text-align: center;
+        }
+
+        .hobby-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .rock-climbing-image {
+            max-width: 300px;
+        }
+
+        .hobby-image:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+        }
+
+        .importance-section {
+            background: #f8f9fa;
+            padding: 3rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .importance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto 0;
+        }
+
+        .importance-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .importance-item h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            background: var(--background-dark);
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .footer h2 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .hobby-images {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="discover.html">Discover</a>
+            <a href="resume.html">Resume</a>
+            <a href="career.html">Career</a>
+            <a href="game.html">Game</a>
+        </div>
+    </nav>
+
+    <main class="hobby-section">
+        <h1 class="text-center">My Hobbies</h1>
+
+        <!-- Softball Section -->
+        <div class="hobby-container fade-in">
+            <h2>Softball</h2>
+            <div class="hobby-text">
+                <p>I played softball for 9 years of my life starting at nine years old and ending my senior year of high school. I absolutely loved the sport because of the team aspect and all of the amazing relationships I formed over the years. It was definitely physically and mentally challenging, but it pushed me in my everyday activities and taught me to be a better student and person. I started out playing in a recreational league called the Northern Virginia Girls Softball Association (NVGSA) where I met some of my lifelong friends. In sixth grade I joined a travel association called Crushers Fastpitch based out of Manassas, VA where I greatly improved on my skills and gained exposure to a higher level of playing. From there I played on a few different teams, the Stingrays and Team Virginia Mizuno. During my junior year, I decided I did not want to continue playing on a travel team and decided to commit my time to playing high school ball. My high school team was very special to me because all of the girls were so tightly bonded and we all saw each other everyday so it really helped our team chemistry. We also won our district twice while I played there which is an amazing accomplishment. I am so grateful to this sport for all the memories and relationships it has given me and it will always hold a special place in my heart.</p>
+            </div>
+            <div class="hobby-images">
+                <div class="hobby-image-container">
+                    <img src="images/softballcoachgeorge.jpeg" alt="With Coach George Fellman" class="hobby-image">
+                    <p class="image-caption">My coach George Fellman who was my biggest role model in the game and made me believe in myself as a player when I felt like I was drowning in the sport.</p>
+                </div>
+                <div class="hobby-image-container">
+                    <img src="images/Z_WSHS_softball_Dist_Champ_Lake_Braddock_0357_23_May_2025.jpeg" alt="District Championship" class="hobby-image">
+                    <p class="image-caption">Me and my best friends, (right to left) Alexa Harvey, Natalie Coughlin, and Layla Muten, immediately after winning against our rivals to win our district championship.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hiking Section -->
+        <div class="hobby-container slide-up">
+            <h2>Hiking</h2>
+            <div class="hobby-text">
+                <p>I have always loved to hike and my family has always been a hiking family. Growing up, I took road trips to Minnesota to go see my family and we would often take trips up to the north shore to go hiking. We stayed around Lutsen and hiked some of the same trails each time (Carlton peak, Oberg, and Eagle Mountain), but each time the hike was just as amazing and the view was as spectacular. In 2016, we took a trip to Banff in the Canadian Rockies which completely changed my life. I was completely mesmerized by the beauty of nature and I became fascinated with the outdoors because of this trip. The hikes were definitely very strenuous, but the view was worth it every time. Since then, I have done quite a bit of hiking in many places. Some of my favorites are: Shenandoah National Park, Panama, Alaska, Mallorca, Vermont, and Arizona.</p>
+            </div>
+            <div class="hobby-images">
+                <div class="hobby-image-container">
+                    <img src="images/banfftripmoraine.JPG" alt="Moraine Lake Hike" class="hobby-image">
+                    <p class="image-caption">9 year old me standing in front of Morain Lake right before hiking 8 miles up to a tea house above the lake.</p>
+                </div>
+                <div class="hobby-image-container">
+                    <img src="images/backpackinggroup.jpeg" alt="Superior Hiking Trail" class="hobby-image">
+                    <p class="image-caption">My friends and I backpacking the Superior Hiking Trail as the fall colors begin to peak out.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rock Climbing Section -->
+        <div class="hobby-container slide-up">
+            <h2>Rock Climbing</h2>
+            <div class="hobby-text">
+                <p>Since coming to UMD, I have gotten into rock climbing because of my friends and it has turned out to be one of my favorite hobbies. I really enjoy the sport because it challenges me in ways that I have never experienced before and it shows me that I am capable of doing things I never thought possible. I really enjoy bouldering, which involves climbing on the holds on the wall without a rope, so it is not as high up. However, I very much enjoy top roping as well because it incorporates endurance which is very interesting to experience and push yourself to finish the route. With top roping, it is very fun to climb on actual rock outside in some very beautiful places. I recently went to Ely's Peak and climbed one of the slabs there which was a very fun experience. One other thing I love about climbing is the community. Everyone is there to have a good time and help each other out, so it makes it very encouraging to keep going on a climb even when you are very tired. I am very excited to see where this hobby takes me.</p>
+            </div>
+            <div class="hobby-images">
+                <div class="hobby-image-container">
+                    <img src="images/rockclimbingelyspeak.jpeg" alt="Climbing at Ely's Peak" class="hobby-image rock-climbing-image">
+                    <p class="image-caption">My first time climbing real rock at Ely's Peak!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Traveling Section -->
+        <div class="hobby-container slide-up">
+            <h2>Traveling</h2>
+            <div class="hobby-text">
+                <p>Traveling is a hobby that makes me feel so alive. I love being able to experience new places, cultures, and opportunities. As a Spanish speaker, I am always interested in traveling to Spanish-speaking countries so I can experience first-hand how Spanish speakers live their lives in different parts of the world and how the language changes in different areas. However, I am interested in traveling everywhere because there is a whole world out there to explore! I was fortunate enough that my parents also held value in traveling, so I went many places as a child, especially during roadtrips. I have been to 38 out of 50 states as well as 7 different countries. Some of my favorite places I have been to include: Panama, Banff, Alaska, and Arizona. I love Panama because there is such a rich mix of cultures with the indigenous population as well as the tie-in of Caribbean culture which also causes the language to have a funky dialect which I think is pretty cool. Besides that, it is also a gorgeous country that borders both the pacific ocean and the Caribbean with mountains, valleys, rainforests, and the Panama Canal. Banff and Alaska I both love because of their unique displays of nature that are not available anywhere else in the world. They both have unique colored bright-blue or bright-green colored waters that are absolutely stunning. Arizona is one of the most unique and beautiful places I have ever been and I find it very interesting because I have not spent much time in places that have deserts. It is also a place with some of the most beautiful sunsets. I cannot wait to continue exploring so many different places!</p>
+            </div>
+            <div class="hobby-images">
+                <div class="hobby-image-container">
+                    <img src="images/arizonasunset.jpeg" alt="Arizona Sunset" class="hobby-image">
+                    <p class="image-caption">Sunset in arizona right outside of Phoenix.</p>
+                </div>
+                <div class="hobby-image-container">
+                    <img src="images/canadatrip11.jpeg" alt="Lake Louise" class="hobby-image">
+                    <p class="image-caption">9 year-old me taking a selfie in front of Lake Louise.</p>
+                </div>
+                <div class="hobby-image-container">
+                    <img src="images/mendenhallglacierak.JPG" alt="Mendenhall Glacier" class="hobby-image">
+                    <p class="image-caption">My family and I posed in front of Mendenhall Glacier in Juneau, AK after hiking to a nearby waterfall.</p>
+                </div>
+                                <div class="hobby-image-container">
+                    <img src="images/perezosoenpanama.jpeg" alt="Sloth in Panama" class="hobby-image">
+                    <p class="image-caption">A sloth that had fallen out of its tree onto the side of the road near my friend's house in Panama City, Panama.</p>
+                </div>
+                <div class="hobby-image-container">
+                    <img src="images/calador.JPG" alt="Cala D'or Beach" class="hobby-image">
+                    <p class="image-caption">A beautiful blue cove on the eastern coast of Mallorca in an area called Cala D'or</p>
+                </div>
+                <div class="hobby-image-container">
+                    <img src="images/sagradafamilia.JPG" alt="Sagrada Familia Interior" class="hobby-image">
+                    <p class="image-caption">The inside of the Basílica de la Sagrada Familia in Barcelona, Spain with beautiful stained glass windows all over the massive church.</p>
+                </div>
+            </div>
+        </section>
+            </div>
+        </div>
+
+        <!-- Why are these hobbies important to me Section -->
+        <div class="importance-section slide-up">
+            <h2 class="text-center">Why are these hobbies important to me?</h2>
+            <div class="importance-grid">
+                <div class="importance-item">
+                    <h3>Softball</h3>
+                    <p>The memories and relationships I made throughout my time playing the sport, as well as the mental-toughness it has provided me with.</p>
+                </div>
+                <div class="importance-item">
+                    <h3>Hiking</h3>
+                    <p>It is a form of exercise that is highly enjoyable, but challenging that has a huge payout at the end if there is a stunning view.</p>
+                </div>
+                <div class="importance-item">
+                    <h3>Rock Climbing</h3>
+                    <p>It pushes me in ways that I have never experienced before and it gets me out of my comfort zone so that I am able to do hard things.</p>
+                </div>
+                <div class="importance-item">
+                    <h3>Traveling</h3>
+                    <p>I want to understand as much of the world as possible and the only way to truly know a palace is to experience it yourself. I believe that traveling is the best form of education.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h2>Keeping up with me!</h2>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/meredith.mosford?igsh=azh1bW9xNjQyZXM5&utm_source=qr" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/meredith-mosford-175581350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
+            <a href="mailto:mosfo002@d.umn.edu">Email Me!</a>
+        </div>
+    </footer>
+</body>
+</html>

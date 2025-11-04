@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Meredith Mosford</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .resume-container {
+            max-width: 1000px;
+            margin: 6rem auto 2rem;
+            padding: 0 1.5rem;
+        }
+
+        .download-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .download-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .resume-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .resume-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .resume-section h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .company {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background: #f8f9fa;
+            padding: 0.8rem 1.2rem;
+            border-radius: 6px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-2px);
+            background: #f0f2f5;
+        }
+
+        .achievements-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .achievements-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .achievements-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .experience-header {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="discover.html">Discover</a>
+            <a href="resume.html">Resume</a>
+            <a href="career.html">Career</a>
+            <a href="game.html">Game</a>
+        </div>
+    </nav>
+
+    <main class="resume-container">
+        <div class="download-section fade-in">
+            <h1>My Resume</h1>
+            <a href="files/MosfordMeredithResume.pdf" download class="download-button">
+                Download PDF Resume
+            </a>
+        </div>
+
+        <div class="resume-section slide-up">
+            <h2>Education</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>University of Minnesota Duluth</h3>
+                    <span class="date">2025 - Present</span>
+                </div>
+                <p class="company">Spanish and Business Studies</p>
+                <p>First-year student pursuing a dual focus in Spanish and Business</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>West Springfield High School</h3>
+                    <span class="date">Graduated 2025</span>
+                </div>
+                <p class="company">High School Diploma</p>
+                <p>Graduated with Honors • 4.5 GPA</p>
+            </div>
+        </div>
+
+        <div class="resume-section slide-up">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>ESOL Program Assistant</h3>
+                    <span class="date">2023 - 2025</span>
+                </div>
+                <p class="company">West Springfield High School</p>
+                <p>Assisted new international students in acclimating to American school culture and language</p>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Varsity Athlete</h3>
+                    <span class="date">2021 - 2025</span>
+                </div>
+                <p class="company">West Springfield High School Athletics</p>
+                <ul>
+                    <li>Varsity Softball Team Captain</li>
+                    <li>Varsity Swim & Dive Team Member</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-section slide-up">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Spanish Language</div>
+                <div class="skill-item">Cross-Cultural Communication</div>
+                <div class="skill-item">Team Leadership</div>
+                <div class="skill-item">Language Teaching</div>
+                <div class="skill-item">Athletic Leadership</div>
+                <div class="skill-item">Time Management</div>
+            </div>
+        </div>
+
+        <div class="resume-section slide-up">
+            <h2>Achievements</h2>
+            <ul class="achievements-list">
+                <li>Led softball team to 2 district championships</li>
+                <li>Graduated with 4.5 GPA and Honors</li>
+                <li>4-year Varsity Athlete in multiple sports</li>
+                <li>Active contributor to school's foreign language program</li>
+                <li>Demonstrated leadership in ESOL program assistance</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h2>Keeping up with me!</h2>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/meredith.mosford?igsh=azh1bW9xNjQyZXM5&utm_source=qr" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/meredith-mosford-175581350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
+            <a href="mailto:mosfo002@d.umn.edu">Email Me!</a>
+        </div>
+    </footer>
+</body>
+</html>
